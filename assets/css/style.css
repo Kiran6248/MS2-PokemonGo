@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/*-------------------------------general rule & background image --*/
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    background-image:url(../images/background.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*--------------------------------------------Navigation --*/
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+    background-color: #ecbd1a ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand{
+    padding-left: 15px;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 2.6rem;
+    width: auto;
+    text-align: left;
+}
+
+.navbar-nav{
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.navbar-nav li{
+    text-align: right;
+}
+
+
+
+

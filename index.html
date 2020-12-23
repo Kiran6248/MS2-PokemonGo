@@ -10,11 +10,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<!--Hover.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 <!--Internal CSS link-->
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Pokemon Go</title>
 </head>
+
 <body>
+    <!--Navigation-->
+    <header>
+        <!--Navigation is copied from https://getbootstrap.com/docs/4.5/components/navbar/ -->
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <a class="navbar navbar-brand" href="index.html">Pokemon Go..</a>
+            <button
+               class="navbar-toggler" aria-expanded="false" aria-controls="navbarSupportedContent"
+               aria-label="Toggle navigation" type="button" data-target="#navbarSupportedContent"
+               data-toggle="collapse">
+                         <span class="custom-navbar-toggler-icon">
+                             <i class="fas fa-bars"></i>
+                         </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active mr-4">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#">Pokemons</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+       </nav>
+    </header>
+    <!--Navigation ends-->
+
+
+
 <!--jQuery and JS bundle w/ Popper.js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
