@@ -129,4 +129,57 @@ body{
     color: #000;
     margin: 10px;
 }
+/*---------------------------------Game Container --*/
+
+.memory-game{
+    height: 620px;
+    margin-top: 50px;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 800px;
+    overflow: hidden;
+}
+
+.memory-card{
+    width: calc(25% - 10px);
+    height:  calc(25% - 10px);
+    margin: 3px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+/*--Tranformation when card is active
+.memory-card:active{
+    transform: scale(1.1);
+    transition: transform .3s;
+}--*/
+
+/*--Change cursor when over a card
+.memory-card:hover{
+    cursor: pointer;
+}--*/
+
+/*--Flip card when clicked
+.memory-card.flip{
+    transform: rotateY(180deg);
+}--*/
+
+/*--Change from front to back face--*/
+.front-face, .back-face{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 5px;
+    /*-webkit-backface-visibility: hidden;*/
+}
+
+/*--change from back to front to show pokemon
+.front-face{
+    transform: rotateY(180deg);
+}--*/
+
 
