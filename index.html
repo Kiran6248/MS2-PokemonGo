@@ -50,17 +50,48 @@
     </header>
 <!--Navigation ends-->
 
-<section class="container">
+<section class="container-fluid">
       <!--Heading-->
-      <div class="row">
-        <div class="col-md-12 heading">
-          <h2 class="text-uppercase pt-5">Pokemon go</h2>
+      
+        <div class="container heading-container">
+          <h2 class="text-uppercase">Pokemon go</h2>
           <h4 class="lead">
             Memory card game of pokemons.  
             Gonnna catch'em all..
           </h4>
         </div>
+
+      <!--Difficulty level, instruction and moves container-->  
+
+      <div class="game-container">
+          <div class="row">
+              <div class="col-md-4 float-left text-center">
+                  <div class="ins">
+                 <h3 class="text-uppercase">how to play?</h3> 
+                 <h4 class="lead">Match the card for each Pokemon. Make less move to score more. Good Luck!</h4>
+                  </div>
+
+                  <div class="moves">
+                    <button class="reatart-btn" onclick="restart()">Restart Game</button>  
+                    <br>
+                    <span class="diff">Please select Difficulty level</span>
+                    <select class="diff-selector" name="diff-selector" data-target="">
+                        <option value="easy" data-show=".easy">Easy</option>
+                        <option value="medium" data-show=".medium">Medium</option>
+                        <option value="hard" data-show=".hard">Hard</option>
+                     </select>
+                  </div>
+
+                <div class="col-md-8">
+
+                </div>  
+
+              </div>
+
+          </div>
+
       </div>
+      
  
 <section></section>
 
