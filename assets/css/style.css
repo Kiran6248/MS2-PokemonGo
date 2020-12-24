@@ -54,7 +54,7 @@ body{
     padding-left: 15px;
     display: inline-block;
     font-family: "Lato", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     height: 2.6rem;
     width: auto;
@@ -64,7 +64,7 @@ body{
 
 .navbar-nav{
     font-family: "Lato", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: left;
     display: -webkit-box;
@@ -155,4 +155,41 @@ body{
     transform: rotateY(180deg);
 }--*/
 
+/*-------------------------Footer*/
+footer{
+    color: #000;
+    margin: 0;
+    background-color: rgba(236, 189, 26, 1);
+    height: 40px;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links{
+    padding-bottom: 20px;
+    float: none;
+}
+
+.social-links li a i {
+    height: 32px;
+    width: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.list-inline-items {
+    padding: 10px;
+    display: inline-block;
+    
+}
+#footer-details{
+    text-align: center;
+}
+/*--------------------footer ends*/
 
