@@ -60,19 +60,21 @@
             Gonnna catch'em all..
           </h4>
         </div>
-
-      <!--Difficulty level, instruction and moves container-->  
+     
+        <!--Memory Game section-->
+      
 
       <div class="game-container">
           <div class="row">
-              <div class="col-md-4 float-left text-center">
+        <!--Difficulty level, instruction and moves container-->        
+              <div class="col-lg-4 float-left text-center">
                   <div class="ins">
                  <h3 class="text-uppercase">how to play?</h3> 
                  <h4 class="lead">Match the card for each Pokemon. Make less move to score more. Good Luck!</h4>
                   </div>
 
                   <div class="moves">
-                    <button class="reatart-btn" onclick="restart()">Restart Game</button>  
+                    <button class="restart-btn" onclick="restart()">Restart Game</button>  
                     <br>
                     <span class="diff">Please select Difficulty level</span>
                     <select class="diff-selector" name="diff-selector" data-target="">
@@ -81,8 +83,109 @@
                         <option value="hard" data-show=".hard">Hard</option>
                      </select>
                   </div>
+                  </div>
+         <!--Difficulty level, instruction and moves container ends-->  
+         
+          <!--Game Board-->   
+                <div class="col-lg-8 float-right">
+                    <section class="memory-game">
 
-                <div class="col-md-8">
+                        <div class="memory-card" data-framework="pikachu">
+                            <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                          <div class="memory-card" data-framework="pikachu">
+                            <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="mewtwo">
+                            <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                         <div class="memory-card" data-framework="mewtwo">
+                            <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="meowth">
+                            <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                         <div class="memory-card" data-framework="mewtwo">
+                            <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="jigglypuff">
+                            <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                         <div class="memory-card" data-framework="jigglypuff">
+                            <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="gengar">
+                            <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                         
+                         <div class="memory-card" data-framework="gengar">
+                            <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                         <div class="memory-card" data-framework="eevee">
+                            <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                         
+                         <div class="memory-card" data-framework="eevee">
+                            <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                         <div class="memory-card" data-framework="clefairy">
+                            <img class="front-face" src="assets/images/clefairy-new.JPG" alt="clefairy">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                         
+                         <div class="memory-card" data-framework="clefairy">
+                            <img class="front-face" src="assets/images/clefairy-new.JPG" alt="clefairy">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="charizard">
+                            <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                         
+                         <div class="memory-card" data-framework="charizard">
+                            <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+                          <div class="memory-card" data-framework="arcanine">
+                            <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+                         
+                         <div class="memory-card" data-framework="arcanine">
+                            <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
+                            <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+                         </div>
+
+
+
+
+
+
+
+                    </section>
 
                 </div>  
 
@@ -90,7 +193,7 @@
 
           </div>
 
-      </div>
+      
       
  
 <section></section>
