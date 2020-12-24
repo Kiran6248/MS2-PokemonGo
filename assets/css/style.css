@@ -17,8 +17,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center center;
-    width: 100vw;
-    height: 100vh;
+    background-position: fixed;
+    max-width: 100vw;
+    height: auto;
+    color: #fff;
 }
 
 *{
@@ -45,7 +47,7 @@ body{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
 }
 
 .navbar-brand{
@@ -92,18 +94,39 @@ body{
 
 }
 
-.heading-container h2 {
-  font-size: 2rem;
+.heading-container h4 {
+  /*font-size: 1.6rem;*/
   font-weight: 600;
   text-align: center;
   color: #fff;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.heading-container h4{
-    font-size: 1.6rem;
+.heading-container p{
+    font-size: 1rem;
     font-weight: 400;
-    padding-bottom: 20px;;
+    padding-bottom: 10px;;
 }
- 
+
+/*---------------------------------Instruction Container --*/
+.ins{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding:0 10px;
+}
+
+.ins h4{
+     font-style: italic;
+}
+
+.ins p{
+    font-size: 14px;
+}
+
+.restart-btn, .diff-selector{
+    font-size: 15px;
+    background-color: rgba(236, 189, 26, 1) ; 
+    color: #000;
+    margin: 10px;
+}
 
