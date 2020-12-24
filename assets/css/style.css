@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-/*-------------------------------general rule & background image --*/
+/*--------------------------------------------general --*/
 body{
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     font-weight: 200;
     line-height: 1.5;
+    letter-spacing: 1px;
     text-align: left;
     display: flex;
     -webkit-box-orient: vertical;
@@ -14,17 +15,30 @@ body{
     flex-direction: column;
     background-image:url(../images/background.jpg) ;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
     background-position: center center;
     width: 100vw;
     height: 100vh;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:768px){
+    body{
+        font-size:1rem;
+        letter-spacing: 2px;
+          }
+    }
+
 /*--------------------------------------------Navigation --*/
 .navbar{
     margin-bottom: 0;
     border: 0;
-    background-color: #ecbd1a ;
+    background-color: rgba(236, 189, 26, 1) ;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43,6 +57,7 @@ body{
     height: 2.6rem;
     width: auto;
     text-align: left;
+    font-style: italic;
 }
 
 .navbar-nav{
@@ -64,6 +79,31 @@ body{
     text-align: right;
 }
 
+/*--------------------------------------------Heading --*/
+.heading-container {
+ background-color:rgba(236, 189, 26, .5)  ;   
+ font-family: "Lato", sans-serif;
+ margin-top: 4.75rem;
+ margin-bottom: 1.8rem;
+ color: white;
+ text-align: center;
+ letter-spacing: 2px;
+ border-radius: 10px;
 
+}
 
+.heading-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.heading-container h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 20px;;
+}
+ 
 
