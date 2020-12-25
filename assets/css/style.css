@@ -213,9 +213,9 @@ body{
 }
 
 
- /*.hide{
+ .hide{
      display: none;
- }*/
+ }
 
  #poke-select-header{
      text-align: center;
