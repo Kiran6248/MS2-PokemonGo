@@ -126,8 +126,8 @@ body{
     margin-left: 5px;
     display: flex;
     flex-wrap: wrap;
-    perspective: 800px;
-    overflow: hidden;
+    perspective: 1000px;
+   /*overflow: hidden;*/
 }
 
 .memory-card{
@@ -140,21 +140,21 @@ body{
     transition: transform .5s;
 }
 
-/*--Tranformation when card is active
+/*--Tranformation when card is active--*/
 .memory-card:active{
     transform: scale(1.1);
     transition: transform .3s;
-}--*/
+}
 
-/*--Change cursor when over a card
+/*--Change cursor when over a card--*/
 .memory-card:hover{
     cursor: pointer;
-}--*/
+}
 
-/*--Flip card when clicked
+/*--Flip card when clicked--*/
 .memory-card.flip{
     transform: rotateY(180deg);
-}--*/
+}
 
 /*--Change from front to back face--*/
 .front-face, .back-face{
@@ -163,13 +163,13 @@ body{
     padding: 5px;
     position: absolute;
     border-radius: 5px;
-    /*-webkit-backface-visibility: hidden;*/
+    backface-visibility: hidden;
 }
 
-/*--change from back to front to show pokemon
+/*--change from back to front to show pokemon*/
 .front-face{
     transform: rotateY(180deg);
-}--*/
+}
 
 /*--Pokemon selector*/
 .select-poke{
@@ -298,5 +298,56 @@ button[type="submit"]{
     margin-bottom: 20px;
     background-color: rgba(236, 189, 26, 1);
     color: #000;
+}
+
+/* stars container on game page*/
+.stars{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/*stars */
+.stars li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/*Modal popup */
+.popup{
+    margin: 200px auto;
+    padding: 30px;
+    background: rgba(236, 189, 26, .8);
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    color: #fff;
+}
+
+.popup h2{
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+}
+.popup .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.popup .content-1, .content-2{
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+.show{
+    visibility: visible !important;
+    opacity: 100 !important;
 }
 
