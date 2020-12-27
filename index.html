@@ -7,7 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="PokemonGo" content="Memory game of pokemon">
 <!--CSS, Botstrap-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">-->
+
+<link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous">
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 <!--Hover.css-->
@@ -66,13 +72,13 @@
         
             <div class="moves">
                 <div class="stars">
-                    <span><i class="fa fa-star"></i></span>
+                    <li><i class="fa fa-star"></i></li>
                         
                      
-                    <span>   <i class="fa fa-star"></i> </span>
+                    <li>   <i class="fa fa-star"></i> </li>
                     
                     
-                    <span>   <i class="fa fa-star"></i> </span> 
+                    <li>   <i class="fa fa-star"></i> </li> 
                     
                 </div>
                 <span class="moves-counter">0</span>
@@ -119,7 +125,7 @@
                     <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
                 </div>
                 
-                <div class="memory-card" data-framework="mewtwo">
+                <div class="memory-card" data-framework="meowth">
                     <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
                     <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
                 </div>
@@ -183,9 +189,19 @@
 <!--Pop up modal to congratulate-->
 <div id="popup1" class="overlay">
     <div class="popup">
-        <h6>Congratulation</h6>
+        <h2>Congratulation</h2>
+        <a class="close" href="#">x</a>
         <div class="content-1">
-            <h6>Congratulation! you have completed the game.</h6>
+            Congratulation! you have completed the game.
+        </div>
+        <div class="content-2">
+            <p>You made
+                <span id="finalMove"></span>
+                 moves
+            </p>
+            <p>Rating:
+                 <span id="starRating"></span>
+            </p>
         </div>
     </div>
 </div>
@@ -235,8 +251,25 @@
 
 
 <!--jQuery and JS bundle w/ Popper.js-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+ <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+
+<!--Javascript for this page link-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
