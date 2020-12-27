@@ -84,7 +84,7 @@ body{
 
 /*---------------------------------Instruction Container --*/
 .ins{
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 20px;
     padding:0 10px;
 }
@@ -96,6 +96,21 @@ body{
 .ins p{
     font-size: 14px;
 }
+.moves{
+    margin-top: 5px;
+    text-align: center;
+    
+    color: #000;
+    font-size: 20px;
+}
+
+.stars{
+    text-align: center;
+}
+.moves-counter{
+    margin-left: 20px;
+}
+
 
 .restart-btn, .diff-selector{
     font-size: 15px;
