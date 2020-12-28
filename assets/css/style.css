@@ -122,7 +122,7 @@ body{
 
 .memory-game{
 
-    height: 620px;
+    height: 500px;
     margin-top: 50px;
     margin-left: 5px;
     display: flex;
@@ -337,17 +337,17 @@ button[type="submit"]{
 .popup{
     margin: 200px auto;
     padding: 30px;
-    background:rgba(236, 189, 26, .5);
+    background:rgba(47, 68, 96, 1);
     border-radius: 5px;
     width: 70%;
     position: relative;
     transition: all 5s ease-in-out;
-    color: #000;
+    color: #fff;
 }
 
 .popup h2{
     margin-top: 0;
-    color: #000;
+    color: #fff;
     text-align: center;
 }
 .popup .close{
@@ -357,14 +357,14 @@ button[type="submit"]{
     transition: all 200ms;
     font-size: 20px;
     font-weight: 400;
-    color: #000;
+    color: #fff;
 }
 
 .popup .content-1, .content-2{
     max-height: 30%;
     overflow: auto;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 
 .show{
