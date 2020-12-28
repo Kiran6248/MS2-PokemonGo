@@ -6,27 +6,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="PokemonGo" content="Memory game of pokemon"/>
+
 <!--CSS,Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
 <!--Hover.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+
 <!--Internal CSS link-->
 <link rel="stylesheet" href="assets/css/style.css">
-<!--Link to EMail.js user account-->
 
-    
-   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<!--Link to EMail.js user account-->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("user_VdMxj2NJZcfMSA4UKF8ra");
-      
-   })();
+       })();
 </script>
+
 <title>Pokemon Go</title>
 </head>
+
 <body>
 <!--Navigation-->
     <header>
@@ -59,6 +63,7 @@
 <!--Navigation ends-->
 
 <!--Contact form-->
+<!--Contact Form is referred from Rosie resume miniproject-->
 <div class="container-fluid">
     <div class="row">
         <div class="col">
@@ -71,22 +76,19 @@
                     <input type="text" name="name" id="fullname" class="form-control mb-4" placeholder="Name" required/>
                     
                     <input type="email" name="emailaddress" id="emailaddress" class="form-control mb-4" placeholder="Email" required/>
+
                     <textarea rows="3" name="projectsummary" id="projectsummary" class="form-control" placeholder="Feedback" required></textarea>
                     <div class="form-row text-center">
                         <div class="col">
                             <button id="contact-button" type="submit" class="btn btn-secondary">Submit</button>
                         </div>
                     </div>
-
-
                 </form>
-
             </div>
         </div>
     </div>
 </div>
-
-
+<!--Contact Form ends-->
 
 <!--Footer-->  
   <footer class="container-fluid fixed-bottom">
@@ -117,13 +119,12 @@
                          <span class="sr-only">Linkedin</span>
                      </a>
                   </li>
-
-              </ul>
+               </ul>
           </div>
+        </div>
+   </footer>  
+ <!--Footer Ends-->  
 
-      </div>
-
-  </footer>  
 <!--jQuery and JS bundle w/ Popper.js-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -135,6 +136,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 <!--jQuery and JS bundle w/ popper.js-->
+
 <!--Javascript for this page link-->
 <script src="assets/js/contact.js"></script>"
 </body>
