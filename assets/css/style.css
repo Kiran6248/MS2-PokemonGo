@@ -121,13 +121,14 @@ body{
 /*---------------------------------Game Container --*/
 
 .memory-game{
+
     height: 620px;
     margin-top: 50px;
     margin-left: 5px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
-   /*overflow: hidden;*/
+   overflow: hidden;
 }
 
 .memory-card{
@@ -197,7 +198,7 @@ body{
 /*--Progress bar*/
 .progress{
     position: relative;
-    height: 35px;
+    height: 25px;
     margin-bottom: 12px;
     
 }
@@ -219,11 +220,12 @@ body{
 
 /*-- pokemon image section*/
 .img-fluid{
-    width: 70%;
+    width: 60%;
     max-width: 400px;
     height: auto;
-    margin-left: 20px;
+    margin-left: 70px;
     margin-bottom: 30px;
+    
     
 }
 
@@ -283,7 +285,7 @@ footer{
 .contact-heading{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 20px;
 }
 
@@ -313,21 +315,39 @@ button[type="submit"]{
     font-size: 20px;
 }
 
+/* overlay for popup*/
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   background:transparent;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
 /*Modal popup */
 .popup{
     margin: 200px auto;
     padding: 30px;
-    background: rgba(236, 189, 26, .8);
+    background:rgba(236, 189, 26, .5);
     border-radius: 5px;
     width: 70%;
     position: relative;
     transition: all 5s ease-in-out;
-    color: #fff;
+    color: #000;
 }
 
 .popup h2{
     margin-top: 0;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 .popup .close{
@@ -337,13 +357,14 @@ button[type="submit"]{
     transition: all 200ms;
     font-size: 20px;
     font-weight: 400;
-    color: #fff;
+    color: #000;
 }
 
 .popup .content-1, .content-2{
     max-height: 30%;
     overflow: auto;
     text-align: center;
+    color: #000;
 }
 
 .show{
