@@ -23,7 +23,7 @@ const getMoves = localStorage.getItem('moves') + 1
 //then runs the match againest the second card flip and increase the move counter which are both separate function that are called
 
 function flipCard(){
-    if (lockboard) return;
+    if (lockBoard) return;
     if (this === firstCard) return;
     this.classList.add('flip')
     if (!hasFlippedCard){
