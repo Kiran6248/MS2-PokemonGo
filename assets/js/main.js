@@ -1,3 +1,4 @@
+//Game section is referred from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
 // variable to select card on game
 const cards = document.querySelectorAll('.memory-card');
 // variable for card status and stop cards being flipped again once matched
@@ -19,6 +20,7 @@ let closeicon = document.querySelector(".close");
 let modal = document.getElementById("popup1");
 //store in local storage variables to pull back information when required
 const getMoves = localStorage.getItem('moves') + 1
+
 //Function when the card is flipped, checks to see if the card has already been flipped, if its the first card and adds the class flip.
 //then runs the match againest the second card flip and increase the move counter which are both separate function that are called
 
@@ -72,6 +74,16 @@ function resetBoard(){
     });
 })();
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+var music = document.getElementById("myAudio");
+//music function
+function playAudio(){
+    music.play();
+   music.loop = true;
+}
+function pauseAudio(){
+    music.pause();
+}
 
 //moves counter by one for each match
 function moveCounter(){ 
