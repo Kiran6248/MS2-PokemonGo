@@ -110,7 +110,7 @@ body{
     margin-left: 1.25rem;
 }
 
-.restart-btn, .diff-selector{
+.restart-btn, .diff-selector, .play-btn{
     font-size: 1rem;
     background-color: rgba(236, 189, 26, 1) ; 
     color: #000;
