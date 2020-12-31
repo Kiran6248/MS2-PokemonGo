@@ -68,9 +68,11 @@
             </div>
             <div class="moves">
                 <div class="stars">
+                    <ul>
                     <li><i class="fa fa-star"></i></li>
                     <li> <i class="fa fa-star"></i> </li>
                     <li> <i class="fa fa-star"></i> </li>
+                    </ul>
                 </div>
                 <span class="moves-counter">0</span>
                 Move(s)
@@ -84,6 +86,16 @@
                     <option value="medium" data-show=".medium">Medium</option>
                     <option value="hard" data-show=".hard">Hard</option>
                 </select>
+                <div>
+                  <audio id="myAudio">
+                      <source src="assets/sound/music.mp3" type="audio/ogg"/>
+                      <source src="assets/sound/music.mp3" type="audio/mpeg"/>
+                        </audio>      
+                 
+              <button class="play-btn" onclick="playAudio()">Music On</button>
+              <button class="play-btn" onclick="pauseAudio()">Music Off</button>
+                </div>
+
             </div>
         </div>
 <!--Difficulty level, instruction and moves container ends-->  
