@@ -19,12 +19,24 @@ let starlist = document.querySelectorAll(".stars li");
 let closeicon = document.querySelector(".close");
 let modal = document.getElementById("popup1");
 //store in local storage variables to pull back information when required
-const getMoves = localStorage.getItem('moves') + 1
-
+const getMoves = localStorage.getItem('moves') + 1;
+//Sound variable
+var music = document.getElementById("myAudio");
+//Timer variable
+let timerOn = true;
+let musicOff = false;
 //Function when the card is flipped, checks to see if the card has already been flipped, if its the first card and adds the class flip.
 //then runs the match againest the second card flip and increase the move counter which are both separate function that are called
 
 function flipCard(){
+     if (timerOn === true) {
+  startTimer();
+  timerOn = false;
+}
+if (musicOff === false){  
+music.play();
+    music.loop = true;
+}
     if (lockBoard) return;
     if (this === firstCard) return;
     this.classList.add('flip')
@@ -75,26 +87,32 @@ function resetBoard(){
 })();
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-var music = document.getElementById("myAudio");
+
+
 //music function
-function playAudio(){
-    music.play();
-   music.loop = true;
-}
 function pauseAudio(){
     music.pause();
+    musicOff = true;
+   
 }
 
 //moves counter by one for each match
+//star ratings
 function moveCounter(){ 
     moves++;
     counter.innerHTML = moves;
-    if (moves > 14 && moves < 22){   //star ratings
+    if (moves > 14 && moves < 22){   
         for (i = 0; i < 3; i++){
             if (i > 1){
                 stars[i].style.visibility = "collapse";
             }
         }
+     }else if (moves > 23){
+         for (i =0; i < 3; i++){
+             if(i > 0){
+                 stars[i].style.visibility = "collapse";
+             }
+         }
      }
 }
 
@@ -104,16 +122,36 @@ function countCounter(){
       counter2.innerHTML = count;
 }
 
+//count the time with timer
+let time = 0;
+let timer;
+function startTimer() {
+  timer = setInterval(function () {
+    time++;
+    minutes = ("0" + Math.floor(time / 60)).slice(-2);
+    seconds = ("0" + (time % 60)).slice(-2);
+    document.querySelector(".timer").innerHTML = minutes + ":" + seconds;
+  }, 1000);
+}
+
+
+
 // congrats modal displays when matches = 8
+
+
+
 function congrats(){
     if (count == 8){
         modal.classList.add("show");
        
 
  var starRating = document.querySelector(".stars").innerHTML;
- 
+ var timerDisplay = document.querySelector(".timer").innerHTML;
+
  document.getElementById("finalMove").innerHTML = moves+1;
  document.getElementById("starRating").innerHTML = starRating;
+ alert(timerDisplay);
+ //document.getElementsById("timerDisplay").innerHTML = timerDisplay;
 
    closeModal();
     };
