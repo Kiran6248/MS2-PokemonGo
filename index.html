@@ -78,22 +78,19 @@
                 Move(s)
                 <span class="count-counter">0</span>
                 Match(s)
-                <button class="restart-btn" onclick="restart()">Restart Game</button>
                 <br>
-                <span class="diff">Please select Difficulty level</span>
-                <select class="diff-selector" name="diff-selector" data-target="">
-                    <option value="easy" data-show=".easy">Easy</option>
-                    <option value="medium" data-show=".medium">Medium</option>
-                    <option value="hard" data-show=".hard">Hard</option>
-                </select>
+                <div class="game-timer">
+                  Time: <span class="timer"> 00:00</span>
+              </div>
                 <div>
+                <span><button class="restart-btn" onclick="restart()">Restart Game</button></span>
+               
                   <audio id="myAudio">
                       <source src="assets/sound/music.mp3" type="audio/ogg"/>
                       <source src="assets/sound/music.mp3" type="audio/mpeg"/>
                         </audio>      
-                 
-              <button class="play-btn" onclick="playAudio()">Music On</button>
-              <button class="play-btn" onclick="pauseAudio()">Music Off</button>
+              <span><button class="play-btn" onclick="pauseAudio()">Music Off</button></span>
+              
                 </div>
 
             </div>
@@ -198,6 +195,10 @@
             <p>Rating:
                  <span id="starRating"></span>
             </p>
+            <p>Time Taken:
+                 <span id="timerDisplay"></span>
+            </p>
+
         </div>
     </div>
 </div>
