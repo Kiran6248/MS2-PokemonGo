@@ -150,8 +150,7 @@ function congrats(){
 
  document.getElementById("finalMove").innerHTML = moves+1;
  document.getElementById("starRating").innerHTML = starRating;
- alert(timerDisplay);
- //document.getElementsById("timerDisplay").innerHTML = timerDisplay;
+ document.getElementById("timerDisplay").innerHTML = timerDisplay;
 
    closeModal();
     };
