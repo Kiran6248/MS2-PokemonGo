@@ -14,12 +14,12 @@ let counter = document.querySelector(".moves-counter");
 let counter2 = document.querySelector(".count-counter");
 // Star variables defined
 const stars = document.querySelectorAll(".fa-star");
-let starlist = document.querySelectorAll(".stars li");
+//let starlist = document.querySelectorAll(".stars li");
 //Variable for Modal when game is complete
 let closeicon = document.querySelector(".close");
 let modal = document.getElementById("popup1");
 //store in local storage variables to pull back information when required
-const getMoves = localStorage.getItem('moves') + 1;
+//const getMoves = localStorage.getItem('moves') + 1;
 //Sound variable
 var music = document.getElementById("myAudio");
 //Timer variable
@@ -39,7 +39,7 @@ music.play();
 }
     if (lockBoard) return;
     if (this === firstCard) return;
-    this.classList.add('flip')
+    this.classList.add('flip');
     if (!hasFlippedCard){
         hasFlippedCard = true;
         firstCard = this;
@@ -63,7 +63,7 @@ function disableCards(){
     countCounter(); //increase the match counter
     
     resetBoard(); //disable both cards
-    localStorage.setItem = ('moves')+1 //sets stored in local storage
+    localStorage.setItem = ('moves')+1;  //sets stored in local storage
     congrats(); //when 8 matches have been completed bring up congrats modal
 }
 function unflipCards() {
@@ -87,8 +87,6 @@ function resetBoard(){
 })();
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-
-
 //music function
 function pauseAudio(){
     music.pause();
@@ -98,11 +96,13 @@ function pauseAudio(){
 
 //moves counter by one for each match
 //star ratings
+// code accredited to a fellow student which has been modified https://github.com/MattMoore050783/Dinosaurs-MS2/blob/master/assets/js/main.js
 function moveCounter(){ 
     moves++;
     counter.innerHTML = moves;
-    if (moves > 14 && moves < 22){   
-        for (i = 0; i < 3; i++){
+    let i;
+    if (moves > 14 && moves < 22){  
+         for (i = 0; i < 3; i++){
             if (i > 1){
                 stars[i].style.visibility = "collapse";
             }
@@ -123,8 +123,11 @@ function countCounter(){
 }
 
 //count the time with timer
+//Function from stack overflow
 let time = 0;
 let timer;
+let minutes;
+let seconds;
 function startTimer() {
   timer = setInterval(function () {
     time++;
@@ -134,17 +137,11 @@ function startTimer() {
   }, 1000);
 }
 
-
-
 // congrats modal displays when matches = 8
-
-
-
 function congrats(){
     if (count == 8){
         modal.classList.add("show");
        
-
  var starRating = document.querySelector(".stars").innerHTML;
  var timerDisplay = document.querySelector(".timer").innerHTML;
 
@@ -152,8 +149,8 @@ function congrats(){
  document.getElementById("starRating").innerHTML = starRating;
  document.getElementById("timerDisplay").innerHTML = timerDisplay;
 
-   closeModal();
-    };
+closeModal();
+  }
 }
 
 // close modal button
