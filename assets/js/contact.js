@@ -19,4 +19,4 @@ function sendMail(contactForm){
                alert("try again");
             });
          return false;
-    };
+    }
