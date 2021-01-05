@@ -1,30 +1,27 @@
 //Game section is referred from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
 // variable to select card on game
-const cards = document.querySelectorAll('.memory-card');
+var cards = document.querySelectorAll('.memory-card');
 // variable for card status and stop cards being flipped again once matched
-let hasFlippedCard = false;
-let lockBoard = false;
+var hasFlippedCard = false;
+var lockBoard = false;
 // card variables
-let firstCard,
+var firstCard,
     secondCard;
 //moves and count variables
-let moves = 0;
-let count = 0;
-let counter = document.querySelector(".moves-counter");
-let counter2 = document.querySelector(".count-counter");
-// Star variables defined
-const stars = document.querySelectorAll(".fa-star");
-//let starlist = document.querySelectorAll(".stars li");
+var moves = 0;
+var count = 0;
+var counter = document.querySelector(".moves-counter");
+var counter2 = document.querySelector(".count-counter");
+// Star variable defined
+var stars = document.querySelectorAll(".fa-star");
 //Variable for Modal when game is complete
-let closeicon = document.querySelector(".close");
-let modal = document.getElementById("popup1");
-//store in local storage variables to pull back information when required
-//const getMoves = localStorage.getItem('moves') + 1;
+var closeicon = document.querySelector(".close");
+var modal = document.getElementById("popup1");
 //Sound variable
 var music = document.getElementById("myAudio");
 //Timer variable
-let timerOn = true;
-let musicOff = false;
+var timerOn = true;
+var musicOff = false;
 //Function when the card is flipped, checks to see if the card has already been flipped, if its the first card and adds the class flip.
 //then runs the match againest the second card flip and increase the move counter which are both separate function that are called
 
@@ -54,7 +51,7 @@ music.play();
 
 //check both cards for match
 function checkForMatch(){
-    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    var isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
     isMatch ? disableCards() : unflipCards(); //cards can not be flip again
 }
 function disableCards(){
@@ -81,7 +78,7 @@ function resetBoard(){
 }
 (function shuffle() {
     cards.forEach(card => {
-        let ramdomPos = Math.floor(Math.random() * 16); //math for shuffling the card
+        var ramdomPos = Math.floor(Math.random() * 16); //math for shuffling the card
         card.style.order = ramdomPos;
     });
 })();
@@ -100,7 +97,7 @@ function pauseAudio(){
 function moveCounter(){ 
     moves++;
     counter.innerHTML = moves;
-    let i;
+    var i;
     if (moves > 14 && moves < 22){  
          for (i = 0; i < 3; i++){
             if (i > 1){
@@ -124,10 +121,10 @@ function countCounter(){
 
 //count the time with timer
 //Function from stack overflow
-let time = 0;
-let timer;
-let minutes;
-let seconds;
+var time = 0;
+var timer;
+var minutes;
+var seconds;
 function startTimer() {
   timer = setInterval(function () {
     time++;
