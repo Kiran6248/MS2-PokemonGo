@@ -21,7 +21,7 @@ It also has some description about the *pokemons*. This site is made by using **
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
-* Acknowledgments
+* [Acknowledgments](#acknowledgments)
 
 ## **Overview**
 
@@ -79,7 +79,8 @@ Footer will be fixed in the bottom and will have links to my social account.
 
 *Wireframe* : The wireframe for this 3 page project was made for three screen sizes(Mobile View, tablet view and Laptop view). Each page is shown in all three screen sizes in a single page for better understanding of the responsiveness of the page.
 
-The Wireframe for this project can be seen here ![wireframe]().
+The Wireframe for this project can be seen here.
+[Wireframe](assets/docs/wireframe.pdf)
 
 *Fixed Navigation Bar* : Menu heading pointing to each of the 3 pages.
 
@@ -200,6 +201,7 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
   Javascript is used to add functionality and make the site more interactive.
+
 **2. Integration**
 
  * [BootstrapCDN](https://getbootstrap.com/) 
@@ -217,6 +219,7 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 * [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
 
    Balsamiq is used to make wireframes for this project in the skeleton stage.
+
 **3. Workspace, version control and Repository storage**
 
 * [Github](https://en.wikipedia.org/wiki/GitHub)  
@@ -225,6 +228,7 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 * [Gitpod](https://www.gitpod.io/)
 
    Gitpod is main cloud based editor for this project. Workspaces are made using the green Gitpod button in the Github.
+
 **4. Other**
 
 * [AutoPrefixer](https://autoprefixer.github.io/)
@@ -266,7 +270,7 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 
  ## **Testing**
 
- **The detailed testing report can be found here**[Testing]()
+ **The detailed testing report can be found here** [Testing]()
  ***
 
 ## **Deployment**
