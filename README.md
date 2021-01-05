@@ -270,7 +270,7 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 
  ## **Testing**
 
- **The detailed testing report can be found here** [Testing]()
+ **The detailed testing report can be found here** [Testing](TESTING.md)
  ***
 
 ## **Deployment**
@@ -298,7 +298,8 @@ and the local clone will be created.
 ### **Content**
 
 I used google and the following website to get information on the Pokemon.
-* 
+* https://pokemondb.net/
+
 ### **Media**
 
 * The pictures used in the project are taken from Google.com.
