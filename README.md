@@ -17,13 +17,10 @@ It also has some description about the *pokemons*. This site is made by using **
 * [UX](#ux)
 * [Features](#features)
 * [Technologies used](#technologies-used)
-* Resources
-* Testing
-* Project Barriers & Solutions
-* Code Validity
-* Version Control
-* Deployment
-* Credits
+* [Resources](#resources)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 * Acknowledgments
 
 ## **Overview**
@@ -197,71 +194,56 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 * [HTML](https://en.wikipedia.org/wiki/HTML)
 
   HTML is the main language used to write code for this project.
-
 * [CSS](https://en.wikipedia.org/wiki/CSS)
 
   CSS is used to write code for designing and beautifying the site.
-
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
   Javascript is used to add functionality and make the site more interactive.
-
- **2. Integration**
+**2. Integration**
 
  * [BootstrapCDN](https://getbootstrap.com/) 
 
    Bootstrap is used to make the site more respomsive and to make the navbar collapse in the mobile view. All the pages and footer is made using Bootstrap container, to give them a definite size.
- 
-* [jQuery](https://jquery.com/)
+ * [jQuery](https://jquery.com/)
 
-  jQuery is used in making the site more interactive.
-
+    jQuery is used in making the site more interactive.
 * [Font Awesome](https://en.wikipedia.org/wiki/Font_Awesome)
 
   Font awesome is used to import Github, Facebook, Twitter and Linkedin fontawesome icons to beautify the page.
-
 * [Google Fonts](https://fonts.google.com/)
 
   Google Fonts is used to import font for this project. The font used in this project is "Lato".
-
 * [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)
 
    Balsamiq is used to make wireframes for this project in the skeleton stage.
-
 **3. Workspace, version control and Repository storage**
 
 * [Github](https://en.wikipedia.org/wiki/GitHub)  
 
    Github is used to make **Repositories** and for **Version Control**.
-
 * [Gitpod](https://www.gitpod.io/)
 
    Gitpod is main cloud based editor for this project. Workspaces are made using the green Gitpod button in the Github.
-
 **4. Other**
 
 * [AutoPrefixer](https://autoprefixer.github.io/)
 
   AutoPrefixer is used to make the site compatible in all browsers.
-
 * [W3C Validator](https://validator.w3.org/)
 
   W3C validator is used for testing HTML and CSS for the site.
-
 * [JSHint](https://jshint.com/)  
 
   JSHint is used for testing javascript code for the site.
-
 * [Am I Responsive](https://amiresponsive.co.uk/)
 
   Am I Responsive site is used to take a mockup screenshot of the project, which is attached at the beginning of this document.
-
 * [Online Spelling Check](https://www.grammarly.com/)
 
    Grammerly is used to check spelling and grammetical errors.
  ***
-
- ## **Resources**
+## **Resources**
 
  * [Code Institute Course Content](https://courses.codeinstitute.net/program/FullstackWebDeveloper)- Main source of fundamental knowledge.
 
@@ -282,7 +264,75 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
  * [Memory Game Tutorial by Marina Ferreira ](https://marina-ferreira.github.io/tutorials/js/memory-game/)- Game board and game functionality design.
  ***
 
- 
+ ## **Testing**
+
+ **The detailed testing report can be found here**[Testing]()
+ ***
+
+## **Deployment**
+
+This project is developed using **Github** Repository. Coding is done in the workspace provided by **Gitpod**.
+
+Steps were taken to deploy the project
+1. Log into [Github](https://github.com/).
+2. Select [Kiran6248/MS2-PokemonGo](https://github.com/Kiran6248/MS2-PokemonGo).
+3. Go to settings on the top right and scroll down to Github Pages.
+4. Under source link dropdown change the none to **master** branch.
+5. The page will be refreshed automatically and we will have a link to the live **URL**.
+
+To run locally, You can clone this repository directly in the editor of your choice by
+
+`git clone` and adding the URL of the site.
+
+`git clone https://github.com/Kiran6248/MS2-PokemonGo`
+
+and the local clone will be created.
+***
+
+## **Credits**
+
+### **Content**
+
+I used google and the following website to get information on the Pokemon.
+* 
+### **Media**
+
+* The pictures used in the project are taken from Google.com.
+* The screenshot od the live URL of the project was taken by **Snipping Tool**.
+* All the images used in the site were minimized by http://tinypng.com
+* The music used in the game is taken from https://zapsplat.com
+
+### **Code**
+
+* The CDN links for Bootstrap, Font Awesome, Hover, Javascript and jQuery were copied from http://cdnjs.com/
+* Code used in making Navbar is copied from [Bootstrap Navbar](https://getbootstrap.com/docs/4.5/components/navbar/)
+* Code used in making Contact Form and Footer are referred from Rosie-Resume Mini project of Code institute.
+* Code Institute Rosie Resume project is also used for help im EmailJS codes and configuration.
+* https://stackoverflow.com/ I used this site to rectify various coding bugs.
+* https://marina-ferreira.github.io/tutorials/js/memory-game/ I used ths site to understand, how to make memory game and used codes from here.
+* https://www.youtube.com/watch?v=ZniVgo8U7ek&t=870s I used this youtube channel to better understand the memory game coding.
+* I have seen many Memory games made by my fellow students of Code Institute and understood the concept.
+*  https://github.com/MattMoore050783/Dinosaurs-MS2 I have referred and modified Popup Modal code from this fellow student.
+***
+
+## **Acknowledgments**
+
+My mentor **Adegbenga Adeye** for guiding and motivating me in every step and giving me great idead to implement in my site.
+
+Code Institute Slack community for giving solutions for every little doubts.
+***
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
