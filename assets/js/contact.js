@@ -1,6 +1,7 @@
 //Javascript code to send email through emailjs.init
 //The JS code for this section is referred from Rosie resume miniproject 
 
+let emailjs;
 function sendMail(contactForm){
     emailjs.send("gmail","pokemon",{
 "from_name": contactForm.name.value,
