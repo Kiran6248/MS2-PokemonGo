@@ -1,9 +1,9 @@
 # Pokemon Go...
 ## A memory game website by Kiran Satyarthy
 
-[View live site here]()
+[View live site here](https://kiran6248.github.io/MS2-PokemonGo/index.html)
 
-![image]()
+![image](assets/docs/responsive.JPG)
 
 **Pokemon go** is a memory game, built by me for my Second Milestone project for Code institute.
 
@@ -26,13 +26,11 @@ It also has some description about the *pokemons*. This site is made by using **
 * Credits
 * Acknowledgments
 
-![image]
-
 ## **Overview**
 
 This project is made by using famous **Pokemons**, also known as *Pocket Monsters*. They are managed by "The Pokemon Company" founded by "**Nintendo**". The purpose of this project is to make a fun memory game both for kids and adults. Kids will enjoy the interactive game with beautiful images and funny sound clips,and adults can be nostalgic while playing with pokemons from their childhood times. There is an information about pokemons section with details of strength, weakness, speed etc., for more enthusiastic players, who wants to learn and know more while they play. 
 
-Check [Wikipedia]() of Pokemon to know more about them.
+Check [Wikipedia](https://en.wikipedia.org/wiki/Pok%C3%A9mon) of Pokemon to know more about them.
 ***
 
 ## **User Stories**
@@ -262,6 +260,36 @@ The footer is fixed in the bottom in all 3 pages and it has link to 4 social net
 
    Grammerly is used to check spelling and grammetical errors.
  ***
+
+ ## **Resources**
+
+ * [Code Institute Course Content](https://courses.codeinstitute.net/program/FullstackWebDeveloper)- Main source of fundamental knowledge.
+
+ * Code institute **Slack Community**- Main source of assistance.
+
+ * [Stack Overflow](https://stackoverflow.com/)- General Resources.
+
+ * [Youtube](https://www.youtube.com/)- General Resource.
+
+ * [iColorpalette](https://icolorpalette.com/)- Find relevant colour palette for the site.
+
+ * [TinyPNG](https://tinypng.com/)- Efficient compression of images for site.
+
+ * [Am I Responsive](http://ami.responsivedesign.is/)- Responsive website mockup image generator.
+
+ * [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq)- Wireframing design tool.
+
+ * [Memory Game Tutorial by Marina Ferreira ](https://marina-ferreira.github.io/tutorials/js/memory-game/)- Game board and game functionality design.
+ ***
+
+ 
+
+
+
+
+
+
+
 
 
 
