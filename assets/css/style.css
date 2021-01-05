@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
@@ -9,15 +16,21 @@ body{
     line-height: 1.5;
     letter-spacing: 1px;
     text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: #ccd4d4;
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 @media only screen and (min-width:768px){
@@ -120,9 +133,13 @@ body{
     height: 31.25rem;
     margin-top: 3.25rem;
     margin-left: 0.32rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    perspective: 62.5rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-perspective: 62.5rem;
+            perspective: 62.5rem;
     overflow: hidden;
     margin-bottom: 3.125rem;
 }
@@ -132,15 +149,28 @@ body{
     height:  calc(25% - 0.625rem);
     margin: 0.188rem;
     position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
 }
 
 /*--Tranformation when card is active--*/
 .memory-card:active{
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
     transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
 }
 
 /*--Change cursor when over a card--*/
@@ -150,7 +180,8 @@ body{
 
 /*--Flip card when clicked--*/
 .memory-card.flip{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 /*------Change from front to back face--*/
@@ -160,12 +191,14 @@ body{
     padding: 0.313rem;
     position: absolute;
     border-radius: 0.313rem;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 /*--change from back to front to show pokemon*/
 .front-face{
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 /*---------------------------Pokemon selector*/
@@ -316,6 +349,8 @@ button[type="submit"]{
     left: 0;
     right: 0;
     background:transparent;
+    -webkit-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
@@ -334,6 +369,8 @@ button[type="submit"]{
     border-radius: 0.313rem;
     width: 70%;
     position: relative;
+    -webkit-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
     transition: all 5s ease-in-out;
     color: #fff;
 }
@@ -348,6 +385,8 @@ button[type="submit"]{
     position: absolute;
     top: 0.625rem;
     right: 0.625rem;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
     transition: all 200ms;
     font-size: 1.25rem;
     font-weight: 400;
@@ -366,4 +405,3 @@ button[type="submit"]{
     visibility: visible !important;
     opacity: 1 !important;
 }
-
