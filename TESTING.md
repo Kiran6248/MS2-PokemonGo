@@ -32,11 +32,11 @@ this file was showing error that "type" in not required for javascript, So I rem
 
     The result can be seen here.
 
-* [main.js]() After running main.js file through jsHint, some warnings were appearing,that "let" and "const" is available in ES6 or use mozilla extension. I replaced all let and const variables by "var" and that warning is gone. Still some warnings about Arrow function syntax is appearing, which can be ignored.
+* [main.js](assets/docs/mainjs-test.JPG) After running main.js file through jsHint, some warnings were appearing,that "let" and "const" is available in ES6 or use mozilla extension. I replaced all let and const variables by "var" and that warning is gone. Still some warnings about Arrow function syntax is appearing, which can be ignored.
 
-* [pokemon.js]() This file is mainly made by jQuery, so when testing it through jsHint, It was showing $ as undefined variable, ths can be ignored.
+* [pokemon.js](assets/docs/pokemonjs-test.JPG) This file is mainly made by jQuery, so when testing it through jsHint, It was showing $ as undefined variable, ths can be ignored.
 
-* [contact.js]() This file was showing no error.
+* [contact.js](contactjs-test.JPG) This file was showing no error.
 
  The Project was tested for Browser compatibility. It was found that the game was not working in mobile devices, the cards were not flipping. Which was fixed by checking codes in **AutoPrefixer.github.io** and updating the CSS. That issue is resolved now.
  ***
