@@ -13,9 +13,10 @@
 
     The results can be seen here.
 
-* [index.html]()
-* [pokemon.html]()
-* [contact.html]() this file was showing error that type in not required for javascript, So I removed the type from javascript cdn in the head element and now the page is error free.
+* [index.html](assets/docs/index-test.JPG)
+* [pokemon.html](assets/docs/pokemonhtml-test.JPG)
+* [contact.html](assets/docs/contacthtml-test.JPG) 
+this file was showing error that "type" in not required for javascript, So I removed the type from javascript cdn in the head element and now the page is error free.
 
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 
@@ -23,7 +24,7 @@
 
     The result can be seen here.
 
-* [style.css]()
+* [style.css](assets/docs/css-test.JPG)
 
 [JSHint](https://jshint.com/)
 
