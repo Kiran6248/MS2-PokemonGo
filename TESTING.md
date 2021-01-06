@@ -36,7 +36,7 @@ this file was showing error that "type" in not required for javascript, So I rem
 
 * [pokemon.js](assets/docs/pokemonjs-test.JPG) This file is mainly made by jQuery, so when testing it through jsHint, It was showing $ as undefined variable, ths can be ignored.
 
-* [contact.js](contactjs-test.JPG) This file was showing no error.
+* [contact.js](assets/docs/contactjs-test.JPG) This file was showing no error.
 
  The Project was tested for Browser compatibility. It was found that the game was not working in mobile devices, the cards were not flipping. Which was fixed by checking codes in **AutoPrefixer.github.io** and updating the CSS. That issue is resolved now.
  ***
