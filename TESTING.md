@@ -180,7 +180,7 @@ Testing client stories from UX part of [README.md](README.md)
 4. Write some text in the **Feedback** area, check if it allows writing more than 3 lines.
 5. Click the **Submit** button, check if the email is received in the recipient email address.
 6. Click the submit button, check it turns **green** color after submitting, and its text changes to `"Feedback Sent"`.
-7. Check if the page refreshes after form submitting, this doesn't happen and can be considered as a bug.
+7. Check if the page refreshes after form submitting, this happens but the button remains green and does not changes for the new submission.
 
 * **Footer**
 
@@ -203,7 +203,7 @@ Testing client stories from UX part of [README.md](README.md)
 
 * The pokemon page is not fixed in the mobile view.
 
-* The contact form does not get cleared after submitting the form.
+* The contact form submit button  does not become to submit when writing new feedback after submitting the first form.
 ***
 
 
