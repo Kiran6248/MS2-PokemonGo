@@ -15,9 +15,14 @@ function sendMail(contactForm){
                 sentButton.style.backgroundColor = "Green";
                 sentButton.innerHTML = "Feedback Sent!";
                 },
+                
             function(error) {
                console.log("failed", error);
                alert("try again");
             });
-         return false;
+       // Clear form after submission
+            document.getElementById('contactForm').reset();
+            return false;
     }
+
+   
