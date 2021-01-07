@@ -93,6 +93,7 @@ The Wireframe for this project can be seen here.
 **Colours**:
 
 The colour theme is selected from original Pokeball colours. The background colour is kept Greyish Blue(#ccd4d4), Navigation and footer colour is Dark Red (#BD0107) and font colour is kept black(#000) and white(#fff) according to the background.
+![image](assets/docs/colours.png)
 
 
 **Typography**:
