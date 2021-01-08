@@ -10,18 +10,16 @@ function sendMail(contactForm){
 })
         .then(
             function(response) {
-                console.log("success", response);
-                var sentButton = document.getElementById('contact-button');
+                var sentButton = document.getElementById("contact-button");
                 sentButton.style.backgroundColor = "Green";
                 sentButton.innerHTML = "Feedback Sent!";
+                alert("Your feedback is submitted");
                 },
-                
-            function(error) {
-               console.log("failed", error);
+                function(error) {
                alert("try again");
             });
        // Clear form after submission
-            document.getElementById('contactForm').reset();
+            document.getElementById("contactForm").reset();
             return false;
     }
 
