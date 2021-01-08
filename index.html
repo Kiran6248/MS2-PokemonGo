@@ -8,8 +8,7 @@
 <meta name="PokemonGo" content="Memory game of pokemon">
 
 <!--CSS, Botstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
@@ -24,64 +23,56 @@
 
 <body>
 <!--Navigation-->
-    <header>
-<!--Navigation is copied from https://getbootstrap.com/docs/4.5/components/navbar/ -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar navbar-brand" href="index.html">Pokemon Go..</a>
-            <button
-               class="navbar-toggler" aria-expanded="false" aria-controls="navbarNavDropDown"
-               aria-label="Toggle navigation" type="button" data-target="#navbarNavDropDown"
-               data-toggle="collapse">
-                         <span class="custom-navbar-toggler-icon">
-                             <i class="fas fa-bars"></i>
-                         </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropDown">
-                <ul class="navbar-nav">
-                    <li class="nav-item  mr-4">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="pokemon.html">Pokemon</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-       </nav>
-    </header>
+<header>
+    <!--Navigation is copied from https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar navbar-brand" href="index.html">Pokemon Go..</a>
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarNavDropDown"
+            aria-label="Toggle navigation" type="button" data-target="#navbarNavDropDown" data-toggle="collapse">
+            <span class="custom-navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropDown">
+            <ul class="navbar-nav">
+                <li class="nav-item  mr-4">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="pokemon.html">Pokemon</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <!--Navigation ends-->
 
 <!--Memory Game section-->
-    <div class=" container-fluid game-container">
-     <div class="row">
-
-<!--Difficulty level, instruction and moves container-->        
+<div class=" container-fluid game-container">
+    <div class="row">
+        <!--Difficulty level, instruction and moves container-->
         <div class="col-lg-6 float-left text-center">
             <div class="ins">
                 <h4 class="text-uppercase">Pokemon Go..</h4>
-                <p class="lead">Memory card game of Pokemon.  
-            Gotta catch'em all!!</p>
+                <p class="lead">Memory card game of Pokemon. Gotta catch'em all!!</p>
                 <h4 class="text-uppercase">How to play?</h4>
-                <p class="lead">Match the card for each Pokemon. Make less moves to score more. Good Luck!</p>
+                <p class="lead">Match the card for each Pokemon. Make less moves to score more. Good Luck!
+                </p>
             </div>
             <div class="moves">
                 <div class="stars">
                     <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li> <i class="fa fa-star"></i> </li>
-                    <li> <i class="fa fa-star"></i> </li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li> <i class="fa fa-star"></i> </li>
+                        <li> <i class="fa fa-star"></i> </li>
                     </ul>
                 </div>
-                <span class="moves-counter">0</span>
-                Move(s)
-                <span class="count-counter">0</span>
-                Match(s)
-                <br>
-                <div class="game-timer">
-                  Time: <span class="timer"> 00:00</span>
-                </div>
+                <span class="moves-counter">0</span>Move(s)
+                <span class="count-counter">0</span>Match(s)<br>
+                <div class="game-timer">Time: <span class="timer"> 00:00</span></div>
                 <div>
                     <span><button class="restart-btn" onclick="restart()">Restart Game</button></span>
                     <audio id="myAudio">
@@ -91,90 +82,88 @@
                     <span><button class="play-btn" onclick="pauseAudio()">Music Off</button></span>
                 </div>
             </div>
-     </div>
-
-<!--Difficulty level, instruction and moves container ends-->  
+        </div>
+        <!--Difficulty level, instruction and moves container ends-->  
          
-<!--Game Board--> 
-
-<!--Game section is referred from https://marina-ferreira.github.io/tutorials/js/memory-game/ -->  
-      <div class="col-lg-6 float-right">
-            <div class="memory-game">
-                <div class="memory-card" data-framework="pikachu">
-                    <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="pikachu">
-                    <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="mewtwo">
-                    <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="mewtwo">
-                    <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="meowth">
-                    <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="meowth">
-                    <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="jigglypuff">
-                    <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="jigglypuff">
-                    <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="gengar">
-                    <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="gengar">
-                    <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="eevee">
-                    <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="eevee">
-                    <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="charizard">
-                    <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="charizard">
-                    <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                
-                <div class="memory-card" data-framework="arcanine">
-                    <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
-                <div class="memory-card" data-framework="arcanine">
-                    <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
-                    <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
-                </div>
+    <!--Game Board--> 
+    <!--Game section is referred from https://marina-ferreira.github.io/tutorials/js/memory-game/ -->  
+    <div class="col-lg-6 float-right">
+        <div class="memory-game">
+            <div class="memory-card" data-framework="pikachu">
+                <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
             </div>
-         </div>  
-     </div>
-  </div>
+            <div class="memory-card" data-framework="pikachu">
+                <img class="front-face" src="assets/images/pikachu-new.JPG" alt="pikachu">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="mewtwo">
+                <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="mewtwo">
+                <img class="front-face" src="assets/images/mewtwo-new.JPG" alt="mewtwo">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="meowth">
+                <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="meowth">
+                <img class="front-face" src="assets/images/meowth-new.JPG" alt="meowth">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="jigglypuff">
+                <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="jigglypuff">
+                <img class="front-face" src="assets/images/jigglypuff-new.JPG" alt="jigglypuff">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="gengar">
+                <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="gengar">
+                <img class="front-face" src="assets/images/gengar-new.jpg" alt="gengar">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="eevee">
+                <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="eevee">
+                <img class="front-face" src="assets/images/eevee-new.jpg" alt="eevee">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="charizard">
+                <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="charizard">
+                <img class="front-face" src="assets/images/charizard-new.jpg" alt="charizard">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            
+            <div class="memory-card" data-framework="arcanine">
+                <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-framework="arcanine">
+                <img class="front-face" src="assets/images/arcanine-new.JPG" alt="arcanine">
+                <img class="back-face" src="assets/images/card-back.jpeg" alt="Memory Card">
+            </div>
+        </div>
+    </div>  
+</div>
+</div>
 <!--Game board ends-->
 <!--Memory game ends-->
 
@@ -188,14 +177,13 @@
         </div>
         <div class="content-2">
             <p>You made
-                <span id="finalMove"></span>
-                 moves
+            <span id="finalMove"></span>moves
             </p>
             <p>Rating:
-                 <span id="starRating"></span>
+            <span id="starRating"></span>
             </p>
             <p>Time Taken:
-                 <span id="timerDisplay"></span>
+            <span id="timerDisplay"></span>
             </p>
         </div>
     </div>
@@ -203,40 +191,39 @@
 <!--Popup modal ends-->
       
 <!--Footer-->  
-  <footer class="container-fluid fixed-bottom">
-      <div id="footer-details" class="row">
-          <div class="col">
-              <ul class="list-inline social-links">
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://github.com/Kiran6248">
-                         <i class="fab fa-github" aria-hidden="true" ></i>
-                         <span class="sr-only">Github</span>
-                     </a>
-                  </li>
-                   <li class="list-inline-items">
-                     <a target="_blank" href="https://www.facebook.com/">
-                         <i class="fab fa-facebook" aria-hidden="true" ></i>
-                         <span class="sr-only">Facebook</span>
-                     </a>
-                  </li>
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://twitter.com/">
-                         <i class="fab fa-twitter" aria-hidden="true" ></i>
-                         <span class="sr-only">Twitter</span>
-                     </a>
-                  </li>
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://www.linkedin.com/home">
-                         <i class="fab fa-linkedin" aria-hidden="true" ></i>
-                         <span class="sr-only">Linkedin</span>
+<footer class="container-fluid fixed-bottom">
+    <div id="footer-details" class="row">
+        <div class="col">
+            <ul class="list-inline social-links">
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://github.com/Kiran6248">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">Github</span>
                     </a>
-                  </li>
-               </ul>
-          </div>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://twitter.com/">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://www.linkedin.com/home">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">Linkedin</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>  
-
- <!--Footer ends-->  
+    </div>
+</footer>
+<!--Footer ends-->  
 
 <!--jQuery and JS bundle w/ Popper.js-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
