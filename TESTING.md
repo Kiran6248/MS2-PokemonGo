@@ -193,11 +193,21 @@ Testing client stories from UX part of [README.md](README.md)
 * Viewed on physical devices: small phone(320px)| Large phone(414px)| large tablet(768px)| mediu, laptop(1366px)| Large Desktop Screen(1920px)
 ***
 
+### **Lighthouse testing**
+
+The finished site was checked through Lighthouse Developer tool and the result found is attached here.
+![image](assets/docs/lighthouse.JPG)
+
 ### **Project Barrier**
 
 * The CDN for emailjs is updated and because of that, there should be a change in the javascript code for that. which I was unaware of. Later on, I got help from a fellow student through slack and that issue was resolved.
 
 * The background image which I was planned to use was not becoming responsive after many attempts and help, so I decided to remove it and changed the theme to the Pokeball color theme.
+ The code I was using earlier can be seen here.
+ 
+ ![image](assets/docs/bug.png)
+
+ This was replaced by `background-color: #ccd4d4`
 
 ### **Bug report**
 
