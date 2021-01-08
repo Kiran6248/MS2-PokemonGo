@@ -198,6 +198,8 @@ Testing client stories from UX part of [README.md](README.md)
 The finished site was checked through Lighthouse Developer tool and the result found is attached here.
 ![image](assets/docs/lighthouse.JPG)
 
+The best practices section showing `amber` because of low resolution of the images, which I kept purposefully to load the page faster.
+
 ### **Project Barrier**
 
 * The CDN for emailjs is updated and because of that, there should be a change in the javascript code for that. which I was unaware of. Later on, I got help from a fellow student through slack and that issue was resolved.
