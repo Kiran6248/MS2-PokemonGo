@@ -1,6 +1,6 @@
 //Game section is referred from https://marina-ferreira.github.io/tutorials/js/memory-game/ 
 // variable to select card on game
-var cards = document.querySelectorAll('.memory-card');
+var cards = document.querySelectorAll(".memory-card");
 // variable for card status and stop cards being flipped again once matched
 var hasFlippedCard = false;
 var lockBoard = false;
@@ -30,13 +30,13 @@ function flipCard(){
   startTimer();
   timerOn = false;
 }
-if (musicOff === false){  
+if(musicOff === false){  
 music.play();
     music.loop = true;
 }
     if (lockBoard) return;
     if (this === firstCard) return;
-    this.classList.add('flip');
+    this.classList.add("flip");
     if (!hasFlippedCard){
         hasFlippedCard = true;
         firstCard = this;
@@ -55,19 +55,18 @@ function checkForMatch(){
     isMatch ? disableCards() : unflipCards(); //cards can not be flip again
 }
 function disableCards(){
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
     countCounter(); //increase the match counter
-    
-    resetBoard(); //disable both cards
-    localStorage.setItem = ('moves')+1;  //sets stored in local storage
+     resetBoard(); //disable both cards
+    localStorage.setItem = ("moves")+1;  //sets stored in local storage
     congrats(); //when 8 matches have been completed bring up congrats modal
 }
 function unflipCards() {
     lockBoard = true;
     setTimeout(() => {
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
+        firstCard.classList.remove("flip");
+        secondCard.classList.remove("flip");
         resetBoard();
     },1200);
 }
@@ -82,13 +81,12 @@ function resetBoard(){
         card.style.order = ramdomPos;
     });
 })();
-cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener("click", flipCard));
 
 //music function
 function pauseAudio(){
     music.pause();
     musicOff = true;
-   
 }
 
 //moves counter by one for each match
@@ -98,9 +96,9 @@ function moveCounter(){
     moves++;
     counter.innerHTML = moves;
     var i;
-    if (moves > 14 && moves < 22){  
+    if(moves > 14 && moves < 22){  
          for (i = 0; i < 3; i++){
-            if (i > 1){
+            if(i > 1){
                 stars[i].style.visibility = "collapse";
             }
         }
@@ -138,7 +136,6 @@ function startTimer() {
 function congrats(){
     if (count == 8){
         modal.classList.add("show");
-       
  var starRating = document.querySelector(".stars").innerHTML;
  var timerDisplay = document.querySelector(".timer").innerHTML;
 
@@ -164,5 +161,5 @@ function restart(){
     return false;
 }
 cards.forEach(card => {
-    return card.addEventListener('click', flipCard);
+    return card.addEventListener("click", flipCard);
 });
