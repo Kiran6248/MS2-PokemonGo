@@ -9,7 +9,7 @@
 
 <!--CSS, Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <!--Font Awesome-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
@@ -24,33 +24,31 @@
 
 <body>
 <!--Navigation-->
-    <header>
-        <!--Navigation is copied from https://getbootstrap.com/docs/4.5/components/navbar/ -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar navbar-brand" href="index.html">Pokemon Go..</a>
-            <button
-               class="navbar-toggler" aria-expanded="false" aria-controls="navbarNavDropDown"
-               aria-label="Toggle navigation" type="button" data-target="#navbarNavDropDown"
-               data-toggle="collapse">
-                         <span class="custom-navbar-toggler-icon">
-                             <i class="fas fa-bars"></i>
-                         </span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropDown">
-                <ul class="navbar-nav">
-                    <li class="nav-item  mr-4">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link active" href="pokemon.html">Pokemon</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-       </nav>
-    </header>
+<header>
+    <!--Navigation is copied from https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar navbar-brand" href="index.html">Pokemon Go..</a>
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarNavDropDown"
+            aria-label="Toggle navigation" type="button" data-target="#navbarNavDropDown" data-toggle="collapse">
+            <span class="custom-navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropDown">
+            <ul class="navbar-nav">
+                <li class="nav-item  mr-4">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link active" href="pokemon.html">Pokemon</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <!--Navigation ends-->
 
 <!--Pokemon selector-->
@@ -74,403 +72,451 @@
     <div>
         <h3 id="poke-select-header">Love Pokemon?..Know more about them!</h3>
     </div>
-<!--Progress bar starts-->
-<!--Progress bar is referred from Rosie resume minproject skill section-->
-<!--Progress bar and image section for pikachu starts-->
-        <div class="row my-info-1 pikachu hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%;">
+    <!--Progress bar starts-->
+    <!--Progress bar is referred from Rosie resume minproject skill section-->
+    <!--Progress bar and image section for pikachu starts-->
+    <div class="row my-info-1 pikachu hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                    style="width:35%;">
                     <span class="sr-only">35 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:35</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                </div>
+                <span class="progress-type">Health Points:35</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
+                <span class="progress-type">Attack:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:40%;">
                     <span class="sr-only">40 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:40</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Defense:40</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:50</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+                <span class="progress-type">Special Attack:50</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width:50%;">
                     <span class="sr-only">50 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:50</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                    <span class="sr-only">90 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:90</span>
-                </div>
+                <span class="progress-type">Special Defense:50</span>
             </div>
-
-            <div class="col-lg-6"><img class="img-fluid pt-4" src="./assets/images/pikachu-new.JPG"      alt="pikachu"/>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100" style="width:90%;">
+                    <span class="sr-only">90 speed</span>
+                </div>
+                <span class="progress-type">Speed:90</span>
             </div>
         </div>
-<!--Progress bar and image section for pikachu ends-->
 
-<!--Progress bar and image section for mewtwo starts-->
-         <div class="row my-info-1 mewtwo hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;">
+        <div class="col-lg-6"><img class="img-fluid pt-4" src="./assets/images/pikachu-new.JPG" alt="pikachu" />
+        </div>
+    </div>
+    <!--Progress bar and image section for pikachu ends-->
+
+    <!--Progress bar and image section for mewtwo starts-->
+    <div class="row my-info-1 mewtwo hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                    style="width:65%;">
                     <span class="sr-only">65 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:65</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                </div>
+                <span class="progress-type">Health Points:65</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100" style="width:70%;">
                     <span class="sr-only">70 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:70</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Attack:70</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%;">
+                <span class="progress-type">Defense:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0"
+                    aria-valuemax="100" style="width:98%;">
                     <span class="sr-only">98 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:98</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                <span class="progress-type">Special Attack:98</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%;">
                     <span class="sr-only">60 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:60</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                <span class="progress-type">Special Defense:60</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100" style="width:85%;">
                     <span class="sr-only">85 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:85</span>
                 </div>
-            </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/mewtwo-new.JPG"      alt="mewtwo"/>
+                <span class="progress-type">Speed:85</span>
             </div>
         </div>
-<!--Progress bar and image section for mewtwo ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/mewtwo-new.JPG" alt="mewtwo" />
+        </div>
+    </div>
+    <!--Progress bar and image section for mewtwo ends-->
 
-<!--Progress bar and image section for meowth starts-->
-        <div class="row my-info-1 meowth hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+    <!--Progress bar and image section for meowth starts-->
+    <div class="row my-info-1 meowth hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width:50%;">
                     <span class="sr-only">50 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:50</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
-                    <span class="sr-only">60 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:60</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
+                <span class="progress-type">Health Points:50</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%;">
+                    <span class="sr-only">60 attack</span>
+                </div>
+                <span class="progress-type">Attack:60</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:40%;">
                     <span class="sr-only">40 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:40</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Defense:40</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                <span class="progress-type">Special Attack:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%;">
                     <span class="sr-only">60 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:60</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+                <span class="progress-type">Special Defense:60</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100" style="width:95%;">
                     <span class="sr-only">95 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:95</span>
                 </div>
-            </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/meowth-new.JPG"      alt="meowth"/> 
+                <span class="progress-type">Speed:95</span>
             </div>
         </div>
-<!--Progress bar and image section for meowth ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/meowth-new.JPG" alt="meowth" />
+        </div>
+    </div>
+    <!--Progress bar and image section for meowth ends-->
 
-<!--Progress bar and image section for jigglypuff starts-->
-        <div class="row my-info-1 jigglypuff hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%;">
+    <!--Progress bar and image section for jigglypuff starts-->
+    <div class="row my-info-1 jigglypuff hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"
+                    style="width:98%;">
                     <span class="sr-only">98 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:98</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
+                </div>
+                <span class="progress-type">Health Points:98</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:40%;">
                     <span class="sr-only">40 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:40</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%;">
+                <span class="progress-type">Attack:40</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="15" aria-valuemin="0"
+                    aria-valuemax="100" style="width:15%;">
                     <span class="sr-only">15 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:15</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Defense:15</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%;">
+                <span class="progress-type">Special Attack:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100" style="width:25%;">
                     <span class="sr-only">25 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:25</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width:17%;">
+                <span class="progress-type">Special Defense:25</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="17" aria-valuemin="0"
+                    aria-valuemax="100" style="width:17%;">
                     <span class="sr-only">17 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:17</span>
                 </div>
-            </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/jigglypuff-new.JPG" alt="jigglypuff"/>
+                <span class="progress-type">Speed:17</span>
             </div>
         </div>
-<!--Progress bar and image section for jigglypuff ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/jigglypuff-new.JPG" alt="jigglypuff" />
+        </div>
+    </div>
+    <!--Progress bar and image section for jigglypuff ends-->
 
-<!--Progress bar and image section for gengar starts-->
-        <div class="row my-info-1 gengar hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+    <!--Progress bar and image section for gengar starts-->
+    <div class="row my-info-1 gengar hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                    style="width:50%;">
                     <span class="sr-only">50 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:50</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
-                    <span class="sr-only">60 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:60</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Health Points:50</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%;">
+                    <span class="sr-only">60 attack</span>
+                </div>
+                <span class="progress-type">Attack:60</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%;">
+                <span class="progress-type">Defense:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0"
+                    aria-valuemax="100" style="width:98%;">
                     <span class="sr-only">98 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:98</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                <span class="progress-type">Special Attack:98</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100" style="width:70%;">
                     <span class="sr-only">70 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:70</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                <span class="progress-type">Special Defense:70</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100" style="width:80%;">
                     <span class="sr-only">80 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:80</span>
                 </div>
-             </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/gengar-new.jpg"      alt="gengar"/>
+                <span class="progress-type">Speed:80</span>
             </div>
         </div>
-<!--Progress bar and image section for gengar ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/gengar-new.jpg" alt="gengar" />
+        </div>
+    </div>
+    <!--Progress bar and image section for gengar ends-->
 
-<!--Progress bar and image section for eevee starts-->
-        <div class="row my-info-1 eevee hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+    <!--Progress bar and image section for eevee starts-->
+    <div class="row my-info-1 eevee hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                    style="width:55%;">
                     <span class="sr-only">55 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:55</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                </div>
+                <span class="progress-type">Health Points:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:55</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+                <span class="progress-type">Attack:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width:50%;">
                     <span class="sr-only">50 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:50</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%;">
+                <span class="progress-type">Defense:50</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100" style="width:45%;">
                     <span class="sr-only">45 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:45</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;">
+                <span class="progress-type">Special Attack:45</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100" style="width:65%;">
                     <span class="sr-only">65 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:65</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+                <span class="progress-type">Special Defense:65</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%;">
                     <span class="sr-only">55 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:55</span>
                 </div>
-             </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/eevee-new.jpg"       alt="eevee"/>
+                <span class="progress-type">Speed:55</span>
             </div>
         </div>
-<!--Progress bar and image section for eevee ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/eevee-new.jpg" alt="eevee" />
+        </div>
+    </div>
+    <!--Progress bar and image section for eevee ends-->
 
-<!--Progress bar and image section for charizard starts-->
-        <div class="row my-info-1 charizard hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+    <!--Progress bar and image section for charizard starts-->
+    <div class="row my-info-1 charizard hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                    style="width:55%;">
                     <span class="sr-only">55 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:55</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+                </div>
+                <span class="progress-type">Health Points:55</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%;">
                     <span class="sr-only">60 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:60</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+                <span class="progress-type">Attack:60</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="width:50%;">
                     <span class="sr-only">50 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:50</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+                <span class="progress-type">Defense:50</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100" style="width:95%;">
                     <span class="sr-only">95 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:95</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                <span class="progress-type">Special Attack:95</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                    aria-valuemax="100" style="width:85%;">
                     <span class="sr-only">85 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:85</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                <span class="progress-type">Special Defense:85</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100" style="width:90%;">
                     <span class="sr-only">90 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:90</span>
                 </div>
-             </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/charizard-new.jpg" alt="charizard"/>
+                <span class="progress-type">Speed:90</span>
             </div>
         </div>
-<!--Progress bar and image section for charizard ends-->
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/charizard-new.jpg" alt="charizard" />
+        </div>
+    </div>
+    <!--Progress bar and image section for charizard ends-->
 
-<!--Progress bar and image section for arcanine starts-->
-        <div class="row my-info-1 arcanine hide">
-            <div class="col-lg-6 pl-4 pt-4 pr-4 ">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+    <!--Progress bar and image section for arcanine starts-->
+    <div class="row my-info-1 arcanine hide">
+        <div class="col-lg-6 pl-4 pt-4 pr-4 ">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                    style="width:80%;">
                     <span class="sr-only">80 health point</span>
-                    </div>
-                    <span class="progress-type">Health Points:80</span>
-                </div> 
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+                </div>
+                <span class="progress-type">Health Points:80</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                    aria-valuemax="100" style="width:95%;">
                     <span class="sr-only">95 attack</span>
-                    </div>
-                    <span class="progress-type">Attack:95</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+                <span class="progress-type">Attack:95</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100" style="width:75%;">
                     <span class="sr-only">75 defense</span>
-                    </div>
-                    <span class="progress-type">Defense:75</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                <span class="progress-type">Defense:75</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100" style="width:90%;">
                     <span class="sr-only">90 special attack</span>
-                    </div>
-                    <span class="progress-type">Special Attack:90</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                <span class="progress-type">Special Attack:90</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100" style="width:80%;">
                     <span class="sr-only">80 special defense</span>
-                    </div>
-                    <span class="progress-type">Special Defense:80</span>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                <span class="progress-type">Special Defense:80</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100" style="width:90%;">
                     <span class="sr-only">90 speed</span>
-                    </div>
-                    <span class="progress-type">Speed:90</span>
                 </div>
-             </div>
-            <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/arcanine-new.JPG" alt="charizard"/>
+                <span class="progress-type">Speed:90</span>
             </div>
         </div>
- <!--Progress bar and image section for charizard ends-->       
+        <div class="col-lg-6 "><img class="img-fluid pt-4" src="./assets/images/arcanine-new.JPG" alt="charizard" />
+        </div>
+    </div>
+    <!--Progress bar and image section for arcanine ends-->
 </div>
 <!--pokemon information section ends-->
 
 <!--Footer-->  
-  <footer class="container-fluid fixed-bottom">
-      <div id="footer-details" class="row">
-          <div class="col">
-              <ul class="list-inline social-links">
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://github.com/Kiran6248">
-                         <i class="fab fa-github" aria-hidden="true" ></i>
-                         <span class="sr-only">Github</span>
-                     </a>
-                  </li>
-                   <li class="list-inline-items">
-                     <a target="_blank" href="https://www.facebook.com/">
-                         <i class="fab fa-facebook" aria-hidden="true" ></i>
-                         <span class="sr-only">Facebook</span>
-                     </a>
-                  </li>
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://twitter.com/">
-                         <i class="fab fa-twitter" aria-hidden="true" ></i>
-                         <span class="sr-only">Twitter</span>
-                     </a>
-                  </li>
-                  <li class="list-inline-items">
-                     <a target="_blank" href="https://www.linkedin.com/home">
-                         <i class="fab fa-linkedin" aria-hidden="true" ></i>
-                         <span class="sr-only">Linkedin</span>
-                     </a>
-                  </li>
-               </ul>
-          </div>
+<footer class="container-fluid fixed-bottom">
+    <div id="footer-details" class="row">
+        <div class="col">
+            <ul class="list-inline social-links">
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://github.com/Kiran6248">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span class="sr-only">Github</span>
+                    </a>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://twitter.com/">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-items">
+                    <a target="_blank" href="https://www.linkedin.com/home">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sr-only">Linkedin</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+    </div>
 </footer>  
 <!--Footer ends-->
 
