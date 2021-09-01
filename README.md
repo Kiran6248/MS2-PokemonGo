@@ -3,7 +3,7 @@
 
 [View live site here](https://kiran6248.github.io/MS2-PokemonGo/index.html)
 
-![image](assets/docs/responsive.JPG)
+![image](assets/docs/pokemon_responsive.JPG)
 
 **Pokemon go** is a memory game, built by me for my Second Milestone project for Code Institute.
 
